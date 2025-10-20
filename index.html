@@ -81,6 +81,26 @@
             border-left: 5px solid #ff69b4;
         }
 
+        /* ====== Responsive image fix ====== */
+        .wishes img {
+            max-width: 100%;      /* không lớn hơn container */
+            height: auto;         /* giữ tỉ lệ */
+            display: block;       /* tránh khoảng trắng dưới ảnh trên một số trình duyệt */
+            margin: 0 auto 20px;  /* căn giữa và cách nội dung phía dưới */
+            border-radius: 12px;  /* tuỳ chọn: bo góc cho đẹp */
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        /* Tùy chọn: nếu muốn giới hạn chiều cao trên điện thoại để ảnh không quá cao */
+        @media (max-width: 480px) {
+            .wishes img {
+                max-height: 320px; /* nếu ảnh quá cao sẽ co lại giữ tỉ lệ */
+                object-fit: cover; /* nếu bạn đặt chiều cao cố định thì object-fit giúp crop gọn */
+                width: 100%;
+            }
+        }
+        /* ====== end responsive image fix ====== */
+
         .wishes h2 {
             color: #d63384;
             font-size: 28px;
