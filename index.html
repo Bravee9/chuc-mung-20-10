@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 20/10 - Ngày Phụ nữ Việt Nam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .flower {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 1s ease-in;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .date {
+            color: #ffd700;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-in 0.3s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message-box h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .message-box p {
+            color: #333;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .hearts {
+            font-size: 2rem;
+            margin-top: 1rem;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .decorative-flowers {
+            position: fixed;
+            font-size: 2rem;
+            opacity: 0.6;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .flower-1 { top: 10%; left: 10%; }
+        .flower-2 { top: 20%; right: 15%; animation-delay: -5s; }
+        .flower-3 { bottom: 15%; left: 15%; animation-delay: -10s; }
+        .flower-4 { bottom: 20%; right: 10%; animation-delay: -15s; }
+
+        .wishes {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            animation: fadeInUp 1s ease-in 0.6s backwards;
+        }
+
+        .wishes h3 {
+            color: #764ba2;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .wishes ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .wishes li {
+            color: #333;
+            font-size: 1.1rem;
+            margin: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .wishes li:before {
+            content: "🌸";
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .date {
+                font-size: 1.5rem;
+            }
+            
+            .message-box h2 {
+                font-size: 1.5rem;
+            }
+            
+            .message-box p {
+                font-size: 1rem;
+            }
+            
+            .decorative-flowers {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="decorative-flowers flower-1">🌺</div>
+    <div class="decorative-flowers flower-2">🌸</div>
+    <div class="decorative-flowers flower-3">🌼</div>
+    <div class="decorative-flowers flower-4">🌻</div>
+
+    <div class="container">
+        <div class="flower">🌹</div>
+        <h1>Chúc Mừng</h1>
+        <div class="date">20 - 10</div>
+        
+        <div class="message-box">
+            <h2>Ngày Phụ Nữ Việt Nam</h2>
+            <p>
+                Chúc các chị em phụ nữ Việt Nam luôn xinh đẹp, duyên dáng, 
+                tràn đầy sức khỏe và niềm vui!
+            </p>
+            <p>
+                Mong những điều tốt đẹp nhất sẽ luôn đến với các bạn. 
+                Hạnh phúc mãi mãi bên người thân yêu!
+            </p>
+            <div class="hearts">💖 💝 💗</div>
+        </div>
+
+        <div class="wishes">
+            <h3>Lời chúc đến các chị em:</h3>
+            <ul>
+                <li>Luôn tươi trẻ, xinh đẹp và rạng ngời</li>
+                <li>Thành công trong công việc và cuộc sống</li>
+                <li>Hạnh phúc, bình an bên gia đình</li>
+                <li>Mạnh khỏe, vui vẻ mỗi ngày</li>
+                <li>Luôn được trân trọng và yêu thương</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
